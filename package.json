@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "cta-api",
+=======
+  "name": "clinicapi",
+>>>>>>> c638968e7fef42a77fa7cfe0c530d23381f1594d
   "private": true,
   "version": "0.0.0",
   "description": "a Sails application",
@@ -9,6 +13,7 @@
     "@sailshq/lodash": "^3.10.3",
     "@sailshq/socket.io-redis": "^5.2.0",
     "async": "2.0.1",
+<<<<<<< HEAD
     "bcrypt": "^3.0.0",
     "bcryptjs": "^2.4.3",
     "dotenv": "^6.1.0",
@@ -30,6 +35,16 @@
   "devDependencies": {
     "@sailshq/eslint": "^4.19.3",
     "ajv-keywords": "^3.2.0"
+=======
+    "grunt": "^1.0.3",
+    "sails": "^1.0.2",
+    "sails-hook-grunt": "^3.0.2",
+    "sails-hook-orm": "^2.0.0-16",
+    "sails-hook-sockets": "^1.4.0"
+  },
+  "devDependencies": {
+    "@sailshq/eslint": "^4.19.3"
+>>>>>>> c638968e7fef42a77fa7cfe0c530d23381f1594d
   },
   "scripts": {
     "start": "NODE_ENV=production node app.js",
@@ -40,11 +55,19 @@
   "main": "app.js",
   "repository": {
     "type": "git",
+<<<<<<< HEAD
     "url": "git://github.com/milton/cta-api.git"
+=======
+    "url": "git://github.com/milton/clinicapi.git"
+>>>>>>> c638968e7fef42a77fa7cfe0c530d23381f1594d
   },
   "author": "milton",
   "license": "",
   "engines": {
+<<<<<<< HEAD
     "node": ">=8.11"
+=======
+    "node": ">=10.6"
+>>>>>>> c638968e7fef42a77fa7cfe0c530d23381f1594d
   }
 }

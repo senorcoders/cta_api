@@ -43,10 +43,18 @@ module.exports.routes = {
   //  ╔═╗╔═╗╦  ╔═╗╔╗╔╔╦╗╔═╗╔═╗╦╔╗╔╔╦╗╔═╗
   //  ╠═╣╠═╝║  ║╣ ║║║ ║║╠═╝║ ║║║║║ ║ ╚═╗
   //  ╩ ╩╩  ╩  ╚═╝╝╚╝═╩╝╩  ╚═╝╩╝╚╝ ╩ ╚═╝
+<<<<<<< HEAD
   'POST /account' :                              { controller: 'AccountController', action:'create' },
   'POST /account/login' :                        { controller: 'AccountController', action: 'login' },
   'POST /account/form'  :                        { controller: 'AccountController', action: 'createForm' },
   'POST /account/newemail':                      { controller: 'AccountController', action: 'createFormInfo' },
+=======
+  'POST /api/user/:id/avatar':                          { controller: 'UsersController', action:'uploadAvatar' },
+  'GET /api/user/avatar/:id':                           { controller: 'UsersController', action:'avatar' },
+
+
+
+>>>>>>> c638968e7fef42a77fa7cfe0c530d23381f1594d
 
   //  ╦ ╦╔═╗╔╗ ╦ ╦╔═╗╔═╗╦╔═╔═╗
   //  ║║║║╣ ╠╩╗╠═╣║ ║║ ║╠╩╗╚═╗

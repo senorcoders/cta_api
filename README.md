@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # cta-api
+=======
+# clinicapi
+>>>>>>> c638968e7fef42a77fa7cfe0c530d23381f1594d
 
 a [Sails v1](https://sailsjs.com) application
 
@@ -15,7 +19,11 @@ a [Sails v1](https://sailsjs.com) application
 
 ### Version info
 
+<<<<<<< HEAD
 This app was originally generated on Fri Oct 12 2018 10:30:42 GMT-0600 (DST) using Sails v1.0.2.
+=======
+This app was originally generated on Sat Jul 21 2018 08:44:35 GMT-0600 (GMT-06:00) using Sails v1.0.2.
+>>>>>>> c638968e7fef42a77fa7cfe0c530d23381f1594d
 
 <!-- Internally, Sails used [`sails-generate@1.15.26`](https://github.com/balderdashy/sails-generate/tree/v1.15.26/lib/core-generators/new). -->
 

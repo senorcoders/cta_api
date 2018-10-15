@@ -10,8 +10,12 @@
  */
 
 module.exports.bootstrap = async function(done) {
+<<<<<<< HEAD
   sails.moment = require('moment');
   sails.moment.locale('en');
+=======
+
+>>>>>>> c638968e7fef42a77fa7cfe0c530d23381f1594d
   // By convention, this is a good place to set up fake data during development.
   //
   // For example:
@@ -30,6 +34,7 @@ module.exports.bootstrap = async function(done) {
 
   // Don't forget to trigger `done()` when this bootstrap function's logic is finished.
   // (otherwise your server will never lift, since it's waiting on the bootstrap)
+<<<<<<< HEAD
   //return done();
 
   var client = RedisService.prepareConnect().createClient(process.env.REDIS_PORT, process.env.REDIS_HOST);
@@ -40,5 +45,8 @@ module.exports.bootstrap = async function(done) {
       RedisService.setConnection(client);
     return done();
   });
+=======
+  return done();
+>>>>>>> c638968e7fef42a77fa7cfe0c530d23381f1594d
 
 };
