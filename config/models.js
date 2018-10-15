@@ -71,21 +71,13 @@ module.exports.models = {
   attributes: {
     createdAt: { type: 'number', autoCreatedAt: true, },
     updatedAt: { type: 'number', autoUpdatedAt: true, },
-<<<<<<< HEAD
     //id: { type: 'number', autoIncrement: true, },
-=======
-    id: { type: 'number', autoIncrement: true, },
->>>>>>> c638968e7fef42a77fa7cfe0c530d23381f1594d
     //--------------------------------------------------------------------------
     //  /\   Using MongoDB?
     //  ||   Replace `id` above with this instead:
     //
     // ```
-<<<<<<< HEAD
     id: { type: 'string', columnName: '_id' },
-=======
-    // id: { type: 'string', columnName: '_id' },
->>>>>>> c638968e7fef42a77fa7cfe0c530d23381f1594d
     // ```
     //
     // Plus, don't forget to configure MongoDB as your default datastore:
@@ -109,11 +101,7 @@ module.exports.models = {
   ******************************************************************************/
 
   dataEncryptionKeys: {
-<<<<<<< HEAD
     default: 'Ry0qJXofQNW9NC/mH2BLquAG74pbu/BJvFrvOygNPIg='
-=======
-    default: 'NLIDTvElH32kDHD4IKSeWScL+TaEQiVtRgAh+EYEoXw='
->>>>>>> c638968e7fef42a77fa7cfe0c530d23381f1594d
   },
 
 

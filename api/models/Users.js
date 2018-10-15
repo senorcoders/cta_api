@@ -18,7 +18,6 @@ module.exports = {
       unique: true,
       isEmail: true,
       maxLength: 200,
-<<<<<<< HEAD
       example: 'name@info.com'
     },
     password: {
@@ -30,41 +29,6 @@ module.exports = {
     domain: {
       type: 'string'
     }
-=======
-      example: 'carol.reyna@microsoft.com'
-    },
-    firstName: {
-        type: 'string',
-        required: true,
-        unique: false,
-        maxLength: 200        
-    },
-    lastName: {
-        type: 'string',
-        required: true,
-        maxLength: 200,
-        unique: false
-    },
-    avatarUrl: {
-      type: 'string'
-    },
-    avatarFd: {
-      type: 'string'
-    },
-    emailStatus: {
-      type: 'string',
-      isIn: ['unconfirmed', 'changeRequested', 'confirmed'],
-      defaultsTo: 'confirmed',
-      description: 'The confirmation status of the user\'s email address.',
-      extendedDescription:
-`Users might be created as "unconfirmed" (e.g. normal signup) or as "confirmed" (e.g. hard-coded
-admin users).  When the email verification feature is enabled, new users created via the
-signup form have \`emailStatus: 'unconfirmed'\` until they click the link in the confirmation email.
-Similarly, when an existing user changes their email address, they switch to the "changeRequested"
-email status until they click the link in the confirmation email.`
-    },
-
->>>>>>> c638968e7fef42a77fa7cfe0c530d23381f1594d
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
     //  ╚═╝╩ ╩╚═╝╚═╝═╩╝╚═╝
@@ -73,17 +37,6 @@ email status until they click the link in the confirmation email.`
     //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
-<<<<<<< HEAD
-
-=======
-    role: {
-      model: 'roles'
-    },
-    /*patients: {
-      collection: 'patient',
-      via: 'doctors'
-    }*/
->>>>>>> c638968e7fef42a77fa7cfe0c530d23381f1594d
   },
 
 };
