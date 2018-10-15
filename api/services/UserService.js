@@ -1,5 +1,5 @@
 var ObjectId = require('mongodb').ObjectID
-var bcrypt = require('bcrypt');
+var bcrypt = require('bcryptjs');
 const saltRounds = 10
 
 module.exports = {
@@ -127,7 +127,7 @@ module.exports = {
 				if(err)
 					return reject({ error : true, message : "Internal server error" , status : 500 });
 
-				randPassword = generateApiKey(12);
+				randPassword = generateApiKey(15);
 				var query = {
 					active 		: true,
 					createdAt : new Date(),
@@ -154,7 +154,7 @@ module.exports = {
 
 function generateApiKey(length){
 	//edit the token allowed characters
-	var a = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890".split("");
+	var a = ")($#abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890".split("");
 	var b = [];  
 	for (var i=0; i<length; i++) {
 			var j = (Math.random() * (a.length-1)).toFixed(0);

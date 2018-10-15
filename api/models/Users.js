@@ -20,12 +20,6 @@ module.exports = {
       maxLength: 200,
       example: 'name@info.com'
     },
-    name: {
-      type: 'string'
-    },
-    phone: {
-      type: 'string'
-    },
     password: {
       type: 'string'
     },

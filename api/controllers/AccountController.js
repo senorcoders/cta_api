@@ -94,7 +94,7 @@ module.exports = {
         
         userExist = await Users.find( {
             email: params.email,
-            domain: 'milton2espinoza.com' //req.hostname
+            domain: req.hostname
         } )
         .then( function( user ) {            
             return user
@@ -127,6 +127,7 @@ module.exports = {
         inserterFormInfo = await FormInfo.create({
             name: params.name,
             form: params.formID,
+	    birthday: params.birthday,
             email: params.signupEmail
         }).fetch()
         .then( function( newSign ) {

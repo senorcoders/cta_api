@@ -19,6 +19,9 @@ module.exports = {
       type: 'string',
       required: true
     },
+    birthday: {
+      type: 'string'
+    },
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
