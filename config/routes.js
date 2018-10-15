@@ -45,9 +45,12 @@ module.exports.routes = {
   //  ╩ ╩╩  ╩  ╚═╝╝╚╝═╩╝╩  ╚═╝╩╝╚╝ ╩ ╚═╝
   'POST /account' :                              { controller: 'AccountController', action:'create' },
   'POST /account/login' :                        { controller: 'AccountController', action: 'login' },
-  'POST /account/form'  :                        { controller: 'AccountController', action: 'createForm' },
-  'POST /account/newemail':                      { controller: 'AccountController', action: 'createFormInfo' },
+  
+  'POST /account/form'  :                        { controller: 'FormsController', action: 'createForm' },
+  'GET /account/:email/forms':                   { controller: 'FormsController', action: 'getFormInfo' },
 
+  'POST /account/newemail':                      { controller: 'FormInfoController', action: 'createFormInfo' },
+  'GET /account/:email/forms/:formID':            { controller: 'FormInfoController', action: 'getFormInfo'},
   //  ╦ ╦╔═╗╔╗ ╦ ╦╔═╗╔═╗╦╔═╔═╗
   //  ║║║║╣ ╠╩╗╠═╣║ ║║ ║╠╩╗╚═╗
   //  ╚╩╝╚═╝╚═╝╩ ╩╚═╝╚═╝╩ ╩╚═╝
